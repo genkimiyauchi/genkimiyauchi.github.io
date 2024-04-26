@@ -6,7 +6,7 @@ inline: false
 related_posts: false
 ---
 
-I was invited to give a seminar talk on human-swarm interaction at [emergenCITY](https://www.emergencity.de/). 
+I was invited to give a seminar talk on human-swarm interaction at [emergenCITY](https://www.emergencity.de/).
 
 Thank you for the invitation Prof. Roderich Groß.
 

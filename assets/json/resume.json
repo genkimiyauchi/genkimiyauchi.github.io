@@ -33,9 +33,7 @@
       "highlights": ["Energy-aware robot swarms"]
     }
   ],
-  "volunteer": [
-
-  ],
+  "volunteer": [],
   "education": [
     {
       "institution": "The University of Sheffield, Sheffield, UK",
@@ -118,33 +116,18 @@
       "summary": "Developed an app to show how much a user would save money using Revolut, a rising fintech company. Won the sponsor prize at HackKing's (Student Hackathon)."
     }
   ],
-  "certificates": [
-
-  ],
-  "publications": [
-
-  ],
+  "certificates": [],
+  "publications": [],
   "skills": [
     {
       "name": "Software",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "C/C++",
-        "Python",
-        "ROS",
-        "Git",
-        "Docker"
-      ]
+      "keywords": ["C/C++", "Python", "ROS", "Git", "Docker"]
     },
     {
       "name": "Robotic Systems",
       "icon": "fa-solid fa-robot",
-      "keywords": [
-        "ROS",
-        "TurtleBot 2/3/4",
-        "e-puck/Pi-puck",
-        "Kilobot"
-      ]
+      "keywords": ["ROS", "TurtleBot 2/3/4", "e-puck/Pi-puck", "Kilobot"]
     }
   ],
   "languages": [
@@ -159,12 +142,8 @@
       "icon": ""
     }
   ],
-  "interests": [
-
-  ],
-  "references": [
-
-  ],
+  "interests": [],
+  "references": [],
   "projects": [
     {
       "name": "Robot Artist (Best Video Submission award)",
