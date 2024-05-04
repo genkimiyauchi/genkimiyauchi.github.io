@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I successfully defended my PhD with minor corrections! :sparkles: :smile:
+I successfully defended my PhD! :sparkles: :smile:
