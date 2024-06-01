@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper "*A comparative study of energy replenishment strategies for robot swarms*" has been accepted at [ANTS](https://www.uni-konstanz.de/ants-2024/)!
+Our paper "_A comparative study of energy replenishment strategies for robot swarms_" has been accepted at [ANTS](https://www.uni-konstanz.de/ants-2024/)!
