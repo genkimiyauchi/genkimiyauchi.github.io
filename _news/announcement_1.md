@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2023-11-28 15:00:00-0000
+date: 2015-10-22 15:59:00-0400
 inline: true
 related_posts: false
 ---
 
-I successfully defended my PhD! :sparkles: :smile:
+A simple inline announcement.
