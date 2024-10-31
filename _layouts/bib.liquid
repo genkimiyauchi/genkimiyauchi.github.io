@@ -179,16 +179,14 @@
       {{ periodical | strip }}
     </div>
     <div class="periodical" style="color: #DA2A50;">
+      {{ entry.award | strip }}
+    </div>
+    <div class="periodical">
       {{ entry.note | strip }}
     </div>
 
     <!-- Links/Buttons -->
     <div class="links">
-      {% if entry.award %}
-        <a class="award btn btn-sm z-depth-0" role="button">
-          {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awareded{% endif -%}
-        </a>
-      {% endif %}
       {% if entry.abstract %}
         <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
       {% endif %}
@@ -205,8 +203,8 @@
           <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
         {% endif %}
       {% endif %}
-      {%- if entry.paper %}
-        <a href="{{ entry.paper }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
+      {%- if entry.doi %}
+        <a href="{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
       {%- endif %}
       {% if entry.pdf %}
         {% if entry.pdf contains '://' %}
