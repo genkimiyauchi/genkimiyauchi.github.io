@@ -1,6 +1,19 @@
 ---
 ---
-@inproceedings{argote-gerald2024benefits,
+@inproceedings{liu2025capbot,
+  title        = {CapBot: Enabling Battery-Free Swarm Robotics},
+  author       = {Liu, Mengyao and Deferme, Lowie and Van Eyck, Tom and Michiels, Sam and Abadie, Alexandre and Alvarado-Marin, Said and Maksimovic, Filip and Miyauchi, Genki and Jayakumar, Jessica and Talamali, Mohamed S. and Watteyne, Thomas and Gro{\ss}, Roderich and Hughes, Danny},
+  booktitle    = {2025 International Conference on Robotics and Automation (ICRA) (in press)},
+  year         = {2025},
+  organization = {IEEE},
+  abstract     = {Swarm robotics focuses on designing and coordinating large groups of relatively simple robots to perform tasks in a decentralised and collective manner. The swarm provides a resilient and flexible solution for many applications. However, contemporary swarm robots have a significant power problem in that secondary (i.e. rechargeable) batteries are slow to charge and offer lifetimes of only a few years, increasing maintenance costs and pollution due to battery replacement. We imagine a different future, wherein battery-free robots powered by supercapacitors can be recharged in seconds, offer long-life autonomous operation and can rapidly pass charge between one another using trophallaxis. In pursuit of this vision, we contribute the CapBot, a battery-free swarm robot equipped with Mecanum wheels, a Cortex M4F application processor and Bluetooth Low Energy networking. The CapBot fully recharges in 16 s, offers 51 min of autonomous operation at top speed, and can transfer up to 50% of its available charge to a peer via trophallaxis in under 20 s. The CapBot is fully open source and all software and hardware source is available online.},
+  bibtex_show  = {true},
+  selected     = {true},
+  abbr         = {ICRA},
+  preview     = {icra-2025.png}
+}
+
+@inproceedings{talamali2025ready,
   title       = {Ready, Bid, Go! On-Demand Delivery Using Fleets of Drones with Unknown, Heterogeneous Energy Storage Constraints},
   author      = {Talamali, Mohamed S. and Miyauchi, Genki and Watteyne, Thomas and Couceiro, Micael Santos and Gro{\ss}, Roderich},
   booktitle   = {Proc. of the 24th International Conference on Autonomous Agents and Multiagent Systems (AAMAS) (in press)},
@@ -8,7 +21,7 @@
   year        = {2025},
   abstract    = {Unmanned Aerial Vehicles (UAVs) are expected to transform logistics, reducing delivery time, costs, and emissions. This study addresses an on-demand delivery scenario, in which fleets of UAVs are deployed to fulfil orders that arrive stochastically. Unlike previous work, it considers UAVs with heterogeneous, unknown energy storage capacities and assumes no knowledge of the energy consumption models. We propose a decentralised deployment strategy that combines auction-based task allocation with online learning. Each UAV independently decides whether to bid for orders based on its energy storage charge level, the parcel mass, and delivery distance. Over time, it refines its policy to bid only for orders within its capability. Simulations using realistic UAV energy models reveal that, counter-intuitively, assigning orders to the least confident bidders reduces delivery times and increases the number of successfully fulfilled orders. This strategy is shown to outperform threshold-based methods which require UAVs to exceed specific charge levels at deployment. We propose a variant of the strategy which uses learned policies for forecasting. This enables UAVs with insufficient charge levels to commit to fulfilling orders at specific future times, helping to prioritise early orders. Our work provides new insights into long-term deployment of UAV swarms, highlighting the advantages of decentralised energy-aware decision-making coupled with online learning in real-world dynamic environments.},
   bibtex_show = {true},
-  selected    = {false},
+  selected    = {true},
   abbr        = {AAMAS},
   preview     = {aamas-2025.jpg}
 }
@@ -22,7 +35,7 @@
   organization = {Springer},
   abstract     = {This paper studies how groups of robots can effectively navigate through a crowd of agents. It quantifies the performance of platooning and less constrained, greedy strategies, and the extent to which these strategies disrupt the crowd agents. Three scenarios are considered: (i) passive crowds, (ii) counter-flow crowds, and (iii) perpendicular-flow crowds. Through simulations consisting of up to 200 robots, we show that for navigating passive and counter-flow crowds, the platooning strategy is less disruptive and more effective in dense crowds than the greedy strategy, whereas for navigating perpendicular-flow crowds, the greedy strategy outperforms the platooning strategy in either aspect. Moreover, we propose an adaptive strategy that can switch between platooning and greedy behavioral states, and demonstrate that it combines the strengths of both strategies in all the scenarios considered.},
   bibtex_show  = {true},
-  selected     = {false},
+  selected     = {true},
   abbr         = {DARS},
   arxiv        = {2410.14406},
   video        = {https://doi.org/10.15131/shef.data.25480708},
@@ -41,7 +54,7 @@
   organization = {Springer},
   abstract     = {To enable long-term operations of swarms of energy-constrained robots, they need to manage both their in-flow and out-flow of energy. We consider two strategies for doing so: In the first strategy, all robots work at a remote location but due to their limited storage capacity must return to charge. In the second strategy, dedicated mobile chargers with finite storage capacity deliver energy to the remote location, substantially shortening the worker robots' commute. We compare the work performed and the energy efficiency of these strategies using physics-based simulations and reveal conditions under which their performance is close to theoretically derived upper bounds. We assess several factors, including the number of mobile chargers, their storage capacity, transfer losses, and the ratio of energy expended while working and traveling. Our findings confirm that mobile chargers can help increase the work performed, and even overall energy efficiency provided that their energy storage is larger than that of workers.},
   bibtex_show  = {true},
-  selected     = {false},
+  selected     = {ants},
   abbr         = {ANTS},
   doi          = {https://doi.org/10.1007/978-3-031-70932-6_1},
   pdf          = {https://eprints.whiterose.ac.uk/214864/},
