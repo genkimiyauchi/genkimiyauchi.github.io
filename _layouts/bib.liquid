@@ -178,17 +178,15 @@
     <div class="periodical">
       {{ periodical | strip }}
     </div>
+    <div class="periodical" style="color: #DA2A50;">
+      {{ entry.award | strip }}
+    </div>
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
 
     <!-- Links/Buttons -->
     <div class="links">
-      {% if entry.award %}
-        <a class="award btn btn-sm z-depth-0" role="button">
-          {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
-        </a>
-      {% endif %}
       {% if entry.abstract %}
         <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
       {% endif %}
@@ -249,6 +247,9 @@
       {% endif %}
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+      {% endif %}
+      {% if entry.press %}
+        <a href="{{ entry.press }}" class="btn btn-sm z-depth-0" role="button">Press</a>
       {% endif %}
     </div>
     {% if site.enable_publication_badges %}
