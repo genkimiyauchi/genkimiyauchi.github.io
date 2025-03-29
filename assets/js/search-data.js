@@ -413,6 +413,14 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_9/";
+            },},{id: "news-invited-seminar-talk-at-technical-university-of-darmstadt",
+          title: 'Invited seminar talk at Technical University of Darmstadt',
+          description: "",
+          section: "News",},{id: "news-presentations-at-the-1st-german-robotics-conference",
+          title: 'Presentations at the 1st German Robotics Conference',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_11/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
