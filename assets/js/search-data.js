@@ -421,7 +421,10 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_11/";
-            },},{id: "projects-project-1",
+            },},{id: "news-i-presented-our-work-towards-decentralised-formation-of-minimal-length-networks-using-swarms-of-robots-at-aamas-arms-2025-workshop",
+          title: 'I presented our work “Towards Decentralised Formation of Minimal-Length Networks Using Swarms of...',
+          description: "",
+          section: "News",},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
