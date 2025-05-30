@@ -387,7 +387,7 @@ ninja.data = [{
           title: 'Invited seminar talk at TU Darmstadt',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
+              window.location.href = "/news/announcement_2024-04-10/";
             },},{id: "news-i-will-be-at-icra-held-in-yokohama-to-present-our-late-breaking-results-poster-and-workshop-poster",
           title: 'I will be at ICRA held in Yokohama to present our Late-Breaking Results...',
           description: "",
@@ -398,7 +398,7 @@ ninja.data = [{
           title: 'Demo at OpenSwarm All-hands Meeting',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/announcement_5/";
+              window.location.href = "/news/announcement_2024-06-26/";
             },},{id: "news-our-paper-on-the-benefits-of-robot-platooning-for-navigating-crowded-environments-has-been-accepted-at-dars",
           title: 'Our paper “On the Benefits of Robot Platooning for Navigating Crowded Environments” has...',
           description: "",
@@ -412,7 +412,7 @@ ninja.data = [{
           title: 'Invited talk on writing a conference paper at the PhD Bites seminar',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/announcement_9/";
+              window.location.href = "/news/announcement_2025-03-03/";
             },},{id: "news-invited-seminar-talk-at-technical-university-of-darmstadt",
           title: 'Invited seminar talk at Technical University of Darmstadt',
           description: "",
@@ -420,9 +420,15 @@ ninja.data = [{
           title: 'Presentations at the 1st German Robotics Conference',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/announcement_11/";
+              window.location.href = "/news/announcement_2025-03-15/";
             },},{id: "news-i-presented-our-work-towards-decentralised-formation-of-minimal-length-networks-using-swarms-of-robots-at-aamas-arms-2025-workshop",
           title: 'I presented our work “Towards Decentralised Formation of Minimal-Length Networks Using Swarms of...',
+          description: "",
+          section: "News",},{id: "news-invited-seminar-talk-at-polytechnique-montréal",
+          title: 'Invited seminar talk at Polytechnique Montréal',
+          description: "",
+          section: "News",},{id: "news-our-journal-paper-scalable-plug-and-play-robotic-fabrics-based-on-kilobot-modules-has-been-published-in-ra-l",
+          title: 'Our journal paper “Scalable Plug-and-Play Robotic Fabrics Based on Kilobot Modules” has been...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
