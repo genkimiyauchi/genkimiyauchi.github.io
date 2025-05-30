@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I presented our work "Towards Decentralised Formation of Minimal-Length Networks Using Swarms of Robots" at [AAMAS ARMS 2025 workshop](https://arms2025.di.unimi.it/).
+I presented our work "_Towards Decentralised Formation of Minimal-Length Networks Using Swarms of Robots_" at [AAMAS ARMS 2025 workshop](https://arms2025.di.unimi.it/).
