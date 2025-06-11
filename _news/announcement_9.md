@@ -6,7 +6,7 @@ inline: false
 related_posts: false
 ---
 
-I was invited to give a short talk on *writing a conference paper* in the PhD Bites seminar for PhD students at the Faculty of Engineering, The University of Sheffield.
+I was invited to give a short talk on _writing a conference paper_ in the PhD Bites seminar for PhD students at the Faculty of Engineering, The University of Sheffield.
 
 ---
 
