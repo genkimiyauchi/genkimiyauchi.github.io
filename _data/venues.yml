@@ -1,9 +1,23 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"AAMAS":
+  url: "https://aamas2025.org/"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"ANTS":
+  url: https://www.uni-konstanz.de/ants-2024/
 
-"Vision":
-  color: "#009f36"
+"DARS":
+  url: https://dars2024.engineering.cornell.edu/
+
+"HRI":
+  url: https://humanrobotinteraction.org/2020/index.html
+
+"ICRA":
+  url: https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra
+
+"IROS":
+  url: https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros
+
+"Nat. Commun":
+  url: https://www.nature.com/ncomms/
+
+"TAROS":
+  url: https://www.nottingham.ac.uk/conference/fac-eng/taros/index.aspx
