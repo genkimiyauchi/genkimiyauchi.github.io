@@ -32,4 +32,6 @@ Prior to this, I obtained my PhD in Automatic Control and Systems Engineering wi
 My research explored how multiple human users can dynamically share the control of a swarm of robots.
 My research interests include swarm robotics, multi-robot systems, human-robot interaction and energy-aware systems.
 
+**[CV (PDF)](https://drive.google.com/file/d/1s1MdIJ6fIdJlTsbVrRisHXXUJ5aww3mF/view?usp=sharing)**
+
 <!-- [Email](mailto:g.miyauchi@sheffield.ac.uk)  /  [CV](assets/pdf/example_pdf.pdf)  /  [X](https://twitter.com/genki_miyauchi)  /  [GitHub](https://github.com/genkimiyauchi)  /  [GitLab](https://gitlab.com/genki_miyauchi)  /  [Google Scholar](https://scholar.google.com/citations?user=nwPZ0IsAAAAJ&hl=en) -->
