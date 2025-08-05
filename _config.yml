@@ -6,6 +6,9 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Genki
 middle_name:
 last_name: Miyauchi
+first_name_ja: 源己
+middle_name_ja:
+last_name_ja: 宮内
 # contact_note: >
 #   You can even add a little note about which of these is the best way to reach you.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
