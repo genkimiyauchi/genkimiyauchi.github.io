@@ -8,10 +8,8 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  # more_info: >
+  #   <p>Genki Miyauchi (宮内 源己)</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -29,9 +27,10 @@ latest_posts:
 
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Prior to this, I obtained my PhD in Automatic Control and Systems Engineering with the Natural Robotics Lab under the supervision of Professor [Roderich Groß](https://www.informatik.tu-darmstadt.de/rcps/rcps_menu/team_menu_rcps/team_details_135744.en.jsp) at [ACSE](https://www.sheffield.ac.uk/acse) and [Sheffield Robotics](https://www.sheffield.ac.uk/sheffieldrobotics) at the University of Sheffield.
+My research explored how multiple human users can dynamically share the control of a swarm of robots.
+My research interests include swarm robotics, multi-robot systems, human-robot interaction and energy-aware systems.
 
 **[CV (PDF)](https://drive.google.com/file/d/1s1MdIJ6fIdJlTsbVrRisHXXUJ5aww3mF/view?usp=sharing)**
 
 <!-- [Email](mailto:g.miyauchi@sheffield.ac.uk)  /  [CV](assets/pdf/example_pdf.pdf)  /  [X](https://twitter.com/genki_miyauchi)  /  [GitHub](https://github.com/genkimiyauchi)  /  [GitLab](https://gitlab.com/genki_miyauchi)  /  [Google Scholar](https://scholar.google.com/citations?user=nwPZ0IsAAAAJ&hl=en) -->
-
