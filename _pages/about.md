@@ -8,8 +8,8 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Genki Miyauchi (宮内源己)</p>
+  # more_info: >
+  #   <p>Genki Miyauchi (宮内 源己)</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -28,7 +28,7 @@ latest_posts:
 I am a postdoctoral research associate at the University of Sheffield, working on swarm robotics and human-swarm interaction.
 In particular, I am working on the [OpenSwarm](https://openswarm.eu/) project funded by Horizon Europe / Innovate UK, where I focus on developing energy-aware robot swarms.
 
-Prior to this, I obtained my PhD in Automatic Control and Systems Engineering with the Natural Robotics Lab under the supervision of Professor Roderich Groß at [ACSE](https://www.sheffield.ac.uk/acse) and [Sheffield Robotics](https://www.sheffield.ac.uk/sheffieldrobotics) at the University of Sheffield.
+Prior to this, I obtained my PhD in Automatic Control and Systems Engineering with the Natural Robotics Lab under the supervision of Professor [Roderich Groß](https://www.informatik.tu-darmstadt.de/rcps/rcps_menu/team_menu_rcps/team_details_135744.en.jsp) at [ACSE](https://www.sheffield.ac.uk/acse) and [Sheffield Robotics](https://www.sheffield.ac.uk/sheffieldrobotics) at the University of Sheffield.
 My research explored how multiple human users can dynamically share the control of a swarm of robots.
 My research interests include swarm robotics, multi-robot systems, human-robot interaction and energy-aware systems.
 
