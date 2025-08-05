@@ -3,7 +3,7 @@ layout: about
 title: Japanese (日本語)
 nav: true
 nav_order: 4
-permalink: /ja
+permalink: /ja/
 subtitle: リサーチアソシエイト @ <a href='https://www.sheffield.ac.uk/'>シェフィールド大学</a>. 博士
 
 profile:
