@@ -448,7 +448,12 @@ ninja.data = [{
           section: "News",},{id: "news-our-journal-paper-scalable-plug-and-play-robotic-fabrics-based-on-kilobot-modules-has-been-published-in-ra-l",
           title: 'Our journal paper “Scalable Plug-and-Play Robotic Fabrics Based on Kilobot Modules” has been...',
           description: "",
-          section: "News",},{id: "projects-project-1",
+          section: "News",},{id: "news-nagoya-university-students-visit-sheffield-robotics",
+          title: 'Nagoya University students visit Sheffield Robotics',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_2025-08-15/";
+            },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
