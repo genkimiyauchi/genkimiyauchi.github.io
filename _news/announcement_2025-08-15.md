@@ -6,7 +6,7 @@ inline: false
 related_posts: false
 ---
 
-Students from Nagoya University, currently on a short-term study abroad program at the University of Sheffiel, visited our lab at [Sheffield Robotics](https://sheffield.ac.uk/sheffieldrobotics).
+Students from Nagoya University, currently on a short-term study abroad program at the University of Sheffield, visited our lab at [Sheffield Robotics](https://sheffield.ac.uk/sheffieldrobotics).
 
 名古屋大学からシェフィールド大学に短期留学中の学生のみなさんが、[シェフィールドロボティクス](https://sheffield.ac.uk/sheffieldrobotics)の研究室を見学しました。
 
