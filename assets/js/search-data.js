@@ -453,7 +453,10 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2025-08-15/";
-            },},{id: "projects-project-1",
+            },},{id: "news-our-paper-design-for-one-deploy-for-many-navigating-tree-mazes-with-multiple-agents-has-been-accepted-at-mrs",
+          title: 'Our paper “Design for One, Deploy for Many: Navigating Tree Mazes with Multiple...',
+          description: "",
+          section: "News",},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
