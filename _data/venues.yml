@@ -1,12 +1,6 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"AAMAS":
 
-"PhysRev":
-  url: https://journals.aps.org/
-
-"Vision":
-  color: "#009f36"
+"ANTS":
 
 "DARS":
   url: https://dars2024.engineering.cornell.edu/
@@ -31,3 +25,5 @@
 
 "TAROS":
   url: https://www.nottingham.ac.uk/conference/fac-eng/taros/index.aspx
+
+"WAFR":
