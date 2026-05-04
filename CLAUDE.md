@@ -9,6 +9,7 @@ Genki Miyauchi's personal academic website, built with Jekyll using the [al-foli
 ## Development
 
 **Recommended (Docker):**
+
 ```bash
 docker compose pull && docker compose up   # http://localhost:8080
 # or slim image (~100MB):
@@ -16,12 +17,14 @@ docker compose -f docker-compose-slim.yml up
 ```
 
 **Without Docker:**
+
 ```bash
 bundle install
 bundle exec jekyll serve   # http://localhost:4000
 ```
 
 **Build only:**
+
 ```bash
 bundle exec jekyll build   # output in _site/
 ```
@@ -30,19 +33,20 @@ Changes to most files hot-reload. Changes to `_config.yml` require a full restar
 
 ## Key content files
 
-| What to edit | File |
-|---|---|
-| Homepage bio text | `_pages/about.md` |
-| Japanese homepage | `_pages/about_ja.md` |
-| Publications | `_bibliography/papers.bib` |
-| News/announcements | `_news/announcement_YYYY-MM-DD.md` |
-| Social links & email | `_data/socials.yml` |
-| CV data | `_data/cv.yml` (or `assets/json/resume.json`) |
-| Site-wide settings | `_config.yml` |
+| What to edit         | File                                          |
+| -------------------- | --------------------------------------------- |
+| Homepage bio text    | `_pages/about.md`                             |
+| Japanese homepage    | `_pages/about_ja.md`                          |
+| Publications         | `_bibliography/papers.bib`                    |
+| News/announcements   | `_news/announcement_YYYY-MM-DD.md`            |
+| Social links & email | `_data/socials.yml`                           |
+| CV data              | `_data/cv.yml` (or `assets/json/resume.json`) |
+| Site-wide settings   | `_config.yml`                                 |
 
 ## Publications (jekyll-scholar)
 
 Papers are in `_bibliography/papers.bib`. Custom BibTeX fields supported:
+
 - `selected={true}` — shows paper on homepage
 - `abbr={ICRA}` — venue badge
 - `pdf`, `arxiv`, `code`, `video`, `poster`, `slides`, `website` — link buttons
