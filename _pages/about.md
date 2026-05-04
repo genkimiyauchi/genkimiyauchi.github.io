@@ -23,7 +23,7 @@ latest_posts:
   enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
---- 
+---
 
 My research explores how groups of robots can coordinate, adapt, and work alongside humans, spanning swarm robotics, multi-robot systems, and human-robot interaction.
 
