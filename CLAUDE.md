@@ -31,6 +31,17 @@ bundle exec jekyll build   # output in _site/
 
 Changes to most files hot-reload. Changes to `_config.yml` require a full restart.
 
+## Code formatting
+
+Prettier runs automatically via a pre-commit hook (`npx prettier . --write`). CI also checks formatting on every push and will fail if files aren't formatted.
+
+If the CI prettier check fails, the local version likely mismatches CI. Fix with:
+
+```bash
+npm install --save-dev --save-exact prettier @shopify/prettier-plugin-liquid
+npx prettier . --write
+```
+
 ## Key content files
 
 | What to edit         | File                                          |
@@ -54,6 +65,7 @@ Papers are in `_bibliography/papers.bib`. Custom BibTeX fields supported:
 - `award={Best Paper}` — highlights an award
 - `bibtex_show={true}` — shows BibTeX toggle button
 - `abstract={...}` — shown on expand
+- `doi={https://doi.org/10.xxxx/...}` — store the **full URL**, not just the identifier; `_layouts/bib.liquid` uses it directly as an `href`
 
 The `scholar.last_name`/`first_name` in `_config.yml` controls whose name is bolded in author lists.
 
