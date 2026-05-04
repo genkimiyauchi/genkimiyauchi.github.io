@@ -4,7 +4,7 @@ title: Japanese (日本語)
 nav: true
 nav_order: 4
 permalink: /ja/
-subtitle: リサーチアソシエイト @ <a href='https://www.sheffield.ac.uk/'>シェフィールド大学</a>. 博士
+subtitle: Swarm Robotics & Multi-Robot Systems Researcher, PhD
 
 profile:
   align: right
@@ -27,9 +27,13 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-大規模なロボットの分散制御に興味があり、マルチロボットシステム・スウォームロボティクス・ヒューマンスウォームインタラクションなどの研究を行っています。現在はシェフィールド大学の研究員として、[Roderich Groß](https://www.informatik.tu-darmstadt.de/rcps/rcps_menu/team_menu_rcps/team_details_135744.en.jsp) 教授のもと、Horizon Europe / Innovate UK の [OpenSwarm](https://openswarm.eu/) プロジェクトに携わっています。
+大規模なロボットの分散制御に興味があり、マルチロボットシステム・スウォームロボティクス・ヒューマンスウォームインタラクションなどの研究を行っています。
 
-2024年3月に博士をシェフィールド大学より取得しました (指導教員: Roderich Groß 教授)。
+現在はブリストル大学と[Bristol Robotics Laboratory](https://www.bristolroboticslab.com/)にて、[Sabine Hauert](https://hauertlab.com/) 教授のもとシニアリサーチアソシエイトとして、スウォームロボティクスおよびマルチロボットシステムの研究に取り組んでいます。
+
+以前はシェフィールド大学の研究員として、[Roderich Groß](https://www.informatik.tu-darmstadt.de/rcps/rcps_menu/index.en.jsp) 教授のもと、Horizon Europe / Innovate UK の [OpenSwarm](https://openswarm.eu/) プロジェクトに携わっていました。
+
+2024年3月に博士を[シェフィールド大学](https://www.sheffield.ac.uk/)より取得しました (指導教員: Roderich Groß 教授)。
 2019年8月に修士を[キングスカレッジロンドン](https://www.kcl.ac.uk/)より取得しました (指導教員: [Elizabeth Sklar](https://staff.lincoln.ac.uk/esklar) 教授)。
 
 詳細な経歴についてはこちらをご覧ください: **[英語CV (PDF)](https://drive.google.com/file/d/1s1MdIJ6fIdJlTsbVrRisHXXUJ5aww3mF/view?usp=sharing)**。
@@ -39,15 +43,16 @@ latest_posts:
 <h2>経歴</h2>
 
 <ul>
-  <li><b>研究員(リサーチアソシエイト)</b>: シェフィールド大学 電子電気工学科 (2023年5月 - 現在)</li>
+  <li><b>研究員(リサーチアソシエイト)</b>: ブリストル大学 School of Engineering Mathematics and Technology (2026年4月 - 現在)</li>
+  <li><b>研究員(リサーチアソシエイト)</b>: シェフィールド大学 School of Electical and Electronic Engineering (2023年5月 - 2026年3月)</li>
   <li><b>学部研究フェローシップ</b>: キングスカレッジロンドン (2017年6月 - 2017年7月)</li>
 </ul>
 
 <h2>学歴</h2>
 
 <ul>
-  <li><b>博士</b>: シェフィールド大学 自動制御システム学科 (2019年10月 - 2024年3月)</li>
-  <li><b>修士(学士一体型)</b>: キングスカレッジロンドン 情報学科 (2015年9月 - 2019年8月)</li>
+  <li><b>博士</b>: シェフィールド大学 Department of Automatic Control and Systems Engineering (2019年10月 - 2024年3月)</li>
+  <li><b>修士(学士一体型)</b>: キングスカレッジロンドン Department of Informatics (2015年9月 - 2019年8月)</li>
 </ul>
 
 <h2>専門</h2>

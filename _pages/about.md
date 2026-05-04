@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Swarm Robotics & Multi-Robot Systems Researcher, PhD
 
 profile:
   align: right
@@ -23,13 +23,11 @@ latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
----
+--- 
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+My research explores how groups of robots can coordinate, adapt, and work alongside humans, spanning swarm robotics, multi-robot systems, and human-robot interaction.
 
-Prior to this, I obtained my PhD in Automatic Control and Systems Engineering with the Natural Robotics Lab under the supervision of Professor [Roderich Groß](https://www.informatik.tu-darmstadt.de/rcps/rcps_menu/team_menu_rcps/team_details_135744.en.jsp) at [ACSE](https://www.sheffield.ac.uk/acse) and [Sheffield Robotics](https://www.sheffield.ac.uk/sheffieldrobotics) at the University of Sheffield.
-My research explored how multiple human users can dynamically share the control of a swarm of robots.
-My research interests include swarm robotics, multi-robot systems, human-robot interaction and energy-aware systems.
+I am currently a Senior Research Associate at the [University of Bristol](https://www.bristol.ac.uk/) and [Bristol Robotics Laboratory](https://www.bristolroboticslab.com/), working with Professor [Sabine Hauert](https://hauertlab.com/). Previously, I was a Research Associate on the [OpenSwarm](https://openswarm.eu/) project (Horizon Europe / Innovate UK) at the University of Sheffield, developing energy-aware robot swarms. I received my PhD in Automatic Control and Systems Engineering from the [University of Sheffield](https://www.sheffield.ac.uk/) in 2024, under the supervision of Professor [Roderich Groß](https://www.informatik.tu-darmstadt.de/rcps/rcps_menu/index.en.jsp), studying how multiple human operators can dynamically share control of a robot swarm.
 
 **[CV (PDF)](https://drive.google.com/file/d/1tVsMUuyUwZAz0J_j7z06nNfaRYFWE0Ah/view?usp=sharing)**
 
