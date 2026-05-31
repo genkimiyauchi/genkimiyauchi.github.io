@@ -3,10 +3,8 @@
 "ANTS":
 
 "DARS":
-  url: https://dars2024.engineering.cornell.edu/
 
 "HRI":
-  url: https://humanrobotinteraction.org/2020/index.html
 
 "ICRA":
   url: https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra
@@ -15,7 +13,6 @@
   url: https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros
 
 "MRS":
-  url: https://www.sutd.edu.sg/mrs2025/
 
 "Nat. Commun":
   url: https://www.nature.com/ncomms/
@@ -23,7 +20,8 @@
 "RA-L":
   url: "https://www.ieee-ras.org/publications/ra-l"
 
+"RO-MAN":
+
 "TAROS":
-  url: https://www.nottingham.ac.uk/conference/fac-eng/taros/index.aspx
 
 "WAFR":
