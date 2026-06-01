@@ -449,7 +449,7 @@ ninja.data = [{
             },},{id: "news-our-paper-design-for-one-deploy-for-many-navigating-tree-mazes-with-multiple-agents-has-been-accepted-at-mrs",
           title: 'Our paper “Design for One, Deploy for Many: Navigating Tree Mazes with Multiple...',
           description: "",
-          section: "News",},{id: "news-our-papers-warmth-and-competence-in-the-swarm-designing-effective-human-robot-teams-and-the-split-over-n-resource-sharing-problem-are-fewer-capable-agents-better-than-many-simpler-ones-has-been-accepted-at-ants",
+          section: "News",},{id: "news-our-papers-warmth-and-competence-in-the-swarm-designing-effective-human-robot-teams-and-split-over-n-resource-sharing-problem-are-fewer-capable-agents-better-than-many-simpler-ones-has-been-accepted-at-ants",
           title: 'Our papers “Warmth and Competence in the Swarm: Designing Effective Human-Robot Teams” and...',
           description: "",
           section: "News",},{id: "news-our-paper-scalable-multi-agent-maze-traversal-with-local-communication-has-been-accepted-at-wafr",
