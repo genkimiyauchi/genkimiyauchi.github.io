@@ -1,6 +1,10 @@
 metadata:
-  last_updated: '2026-05-18'
+  last_updated: '2026-06-26'
 papers:
+  nwPZ0IsAAAAJ:0EnyYjriUFMC:
+    citations: 0
+    title: Cooperative Energy-Replenishment in Robot Swarms with Optimal Performance and Efficiency
+    year: '2026'
   nwPZ0IsAAAAJ:2osOgNQ5qMEC:
     citations: 9
     title: Multi-Operator Control of Connectivity-Preserving Robot Swarms Using Supervisory Control Theory
@@ -26,19 +30,19 @@ papers:
     title: On the Benefits of Robot Platooning for Navigating Crowded Environments
     year: '2024'
   nwPZ0IsAAAAJ:UeHWp8X0CEIC:
-    citations: 8
+    citations: 10
     title: 'Sharing the Control of Robot Swarms Among Multiple Human Operators: A User Study'
     year: '2023'
   nwPZ0IsAAAAJ:UebtZRa9Y70C:
     citations: 0
-    title: 'Split over  resource sharing problem: Are fewer capable agents better than many simpler ones?'
+    title: 'Split Over n Resource Sharing Problem: Are Fewer Capable Agents Better Than Many Simpler Ones?'
     year: '2026'
   nwPZ0IsAAAAJ:W7OEmFMy1HYC:
     citations: 0
     title: Toward Robot Co-Labourers for Intelligent Farming
     year: Unknown Year
   nwPZ0IsAAAAJ:WF5omc3nYNoC:
-    citations: 2
+    citations: 4
     title: Scalable plug-and-play robotic fabrics based on Kilobot modules
     year: '2025'
   nwPZ0IsAAAAJ:Y0pCki6q_DkC:
@@ -58,7 +62,7 @@ papers:
     title: A study assessing the impact of task duration on performance metrics for multi-robot teams
     year: '2020'
   nwPZ0IsAAAAJ:eQOLeE2rZwMC:
-    citations: 1
+    citations: 2
     title: 'CapBot: Enabling Battery-Free Swarm Robotics'
     year: '2025'
   nwPZ0IsAAAAJ:qjMakFHDy7sC:
@@ -78,10 +82,10 @@ papers:
     title: Toward robot co-labourers for intelligent farming
     year: '2020'
   nwPZ0IsAAAAJ:ufrVoPGSRksC:
-    citations: 0
+    citations: 1
     title: Energy Replenishment Strategies for Robot Swarms
     year: '2025'
   nwPZ0IsAAAAJ:zYLM7Y9cAGgC:
-    citations: 2
+    citations: 3
     title: A Comparative Study of Energy Replenishment Strategies for Robot Swarms
     year: '2024'
