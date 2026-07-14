@@ -1,0 +1,26 @@
+.site-name-main,
+.site-name-top {
+  font-weight: 700;
+}
+
+.publication-award {
+  color: #da2a50;
+  font-weight: 400;
+  margin-top: 0.15rem;
+}
+
+.publications .links > .award {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .publications .row > .abbr {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .publications .row > .abbr + [id] {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+}
