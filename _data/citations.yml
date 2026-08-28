@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-12'
+  last_updated: '2026-08-28'
 papers:
   nwPZ0IsAAAAJ:0EnyYjriUFMC:
     citations: 0
@@ -11,8 +11,8 @@ papers:
     year: '2022'
   nwPZ0IsAAAAJ:5nxA0vEk-isC:
     citations: 0
-    title: Scalable Multi-Agent Maze Traversal With Local Communication
-    year: Unknown Year
+    title: Scalable Multi-Agent Maze Traversal with Local Communication
+    year: '2026'
   nwPZ0IsAAAAJ:9yKSN-GCB0IC:
     citations: 7
     title: An experiment on human-robot interaction in a simulated agricultural task
