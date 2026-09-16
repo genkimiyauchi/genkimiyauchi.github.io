@@ -6,7 +6,7 @@ subtitle: Swarm Robotics & Multi-Robot Systems Researcher, PhD
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic.JPG
   image_circular: false # crops the image to make it circular
   # more_info: >
   #   <p>Genki Miyauchi (宮内 源己)</p>
