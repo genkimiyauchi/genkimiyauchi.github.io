@@ -4,6 +4,10 @@
 
 "DARS":
 
+"Encyclopedia of Robotics":
+  url: https://doi.org/10.1007/978-3-642-41610-1
+  color: "#009f36"
+
 "HRI":
 
 "ICRA":
@@ -16,9 +20,11 @@
 
 "Nat. Commun":
   url: https://www.nature.com/ncomms/
+  color: "#00369f"
 
 "RA-L":
   url: "https://www.ieee-ras.org/publications/ra-l"
+  color: "#00369f"
 
 "RO-MAN":
 
