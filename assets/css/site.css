@@ -13,6 +13,27 @@
   display: none;
 }
 
+/* The annotation runtime positions popovers using document coordinates. */
+.af-popover {
+  position: absolute;
+  z-index: 9999;
+  max-width: min(18rem, calc(100vw - 1rem));
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.375rem;
+  background: var(--global-card-bg-color);
+  color: var(--global-text-color);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  white-space: pre-line;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 15%);
+  pointer-events: none;
+}
+
+.af-popover[hidden] {
+  display: none !important;
+}
+
 @media (min-width: 576px) {
   .publications .row > .abbr {
     flex: 0 0 25%;
