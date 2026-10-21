@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-<div class="post">
+<div class="post" data-language-page>
   <header class="post-header">
     <h1 class="post-title site-name-main">
       {% if site.title == 'blank' %}
-        <span class="font-weight-bold">
+        <span>
           {{- site.first_name }}
           {{ site.middle_name }}
           {{ site.last_name }} | {{ site.last_name_ja }}
@@ -16,7 +16,7 @@ layout: default
         {{ site.title }}
       {% endif %}
     </h1>
-    <p class="desc">{{ page.subtitle }}</p>
+    <p class="desc" lang="en">{{ page.subtitle }}</p>
   </header>
 
   <article>
@@ -43,21 +43,71 @@ layout: default
       </div>
     {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+    <div class="clearfix">
+      {% assign japanese_biography = site.data.translations.ja.biography | markdownify %}
+      {% include localized-content.liquid en=content ja=japanese_biography block=true %}
+    </div>
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
-      <a href="{{ '/news/' | relative_url }}" style="margin-left: 50px; margin-bottom: 20px; display: inline-block;">more &raquo;</a>
+      {% assign homepage_news = site.news | reverse %}
+      {% assign news_limit = page.announcements.limit | default: site.news.size %}
+      <section class="homepage-news" aria-labelledby="news" data-news>
+        <h2 id="news">
+          <a href="{{ '/news/' | relative_url }}" style="color: inherit">{% include localized-content.liquid en='News' %}</a>
+        </h2>
+        <div id="homepage-news-items" class="homepage-news-items" role="region" aria-labelledby="news" tabindex="0">
+          {% assign news_languages = 'en,ja' | split: ',' %}
+          {% for news_language in news_languages %}
+            <div class="news localized-content" data-site-language="{{ news_language }}" lang="{{ news_language }}">
+              {% if site.news.size > 0 %}
+                <table class="table table-sm table-borderless">
+                  {% for item in homepage_news %}
+                    <tr
+                      {% if forloop.index > news_limit %}
+                        data-news-older
+                      {% endif %}
+                    >
+                      <th scope="row" style="width: 20%">
+                        {% if news_language == 'ja' %}
+                          {{ item.date | date: '%Y年%-m月%-d日' }}
+                        {% else %}
+                          {{ item.date | date: '%b %d, %Y' }}
+                        {% endif %}
+                      </th>
+                      <td>
+                        {% assign translated_news = site.data.translations.ja.news[item.slug] %}
+                        {% if news_language == 'ja' and translated_news %}
+                          {{ translated_news | markdownify | remove: '<p>' | remove: '</p>' }}
+                        {% elsif item.inline %}
+                          <span lang="en">{{ item.content | remove: '<p>' | remove: '</p>' | emojify }}</span>
+                        {% else %}
+                          <a class="news-title" href="{{ item.url | relative_url }}" lang="en">{{ item.title }}</a>
+                        {% endif %}
+                      </td>
+                    </tr>
+                  {% endfor %}
+                </table>
+              {% else %}
+                <p>{% include localized-content.liquid en='No news so far...' %}</p>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+        {% if site.news.size > news_limit %}
+          <button class="homepage-news-toggle" type="button" aria-expanded="false" aria-controls="homepage-news-items" lang="en" hidden>
+            more &raquo;
+          </button>
+          <noscript><a href="{{ '/news/' | relative_url }}">more &raquo;</a></noscript>
+        {% endif %}
+      </section>
+      <script defer src="{{ '/assets/js/site-news.js' | relative_url | bust_file_cache }}"></script>
     {% endif %}
 
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">{% include localized-content.liquid en='latest posts' %}</a>
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}
@@ -73,7 +123,7 @@ layout: default
               {% assign interests = site.data.cv.cv.sections.Interests %}
               {% if page.cv_sections contains 'Interests' and interests.size > 0 %}
                 <section aria-labelledby="interests">
-                  <h2 id="interests">Interests</h2>
+                  <h2 id="interests">{% include localized-content.liquid en='Interests' %}</h2>
                   <ul class="homepage-interests">
                     {% for interest in interests %}
                       {% if interest.keywords and interest.keywords != empty %}
@@ -82,20 +132,22 @@ layout: default
                           {% assign keywords = keywords | split: ',' %}
                         {% endif %}
                         {% for keyword in keywords %}
-                          <li>{{ keyword | strip | escape }}</li>
+                          {% assign interest_label = keyword | strip %}
+                          <li>{% include localized-content.liquid en=interest_label %}</li>
                         {% endfor %}
                       {% else %}
-                        <li>{{ interest.name | escape }}</li>
+                        <li>{% include localized-content.liquid en=interest.name %}</li>
                       {% endif %}
                     {% endfor %}
                   </ul>
                 </section>
               {% endif %}
               <section aria-labelledby="education">
-                <h2 id="education">Education</h2>
+                <h2 id="education">{% include localized-content.liquid en='Education' %}</h2>
                 <ul class="homepage-education">
                   {% for entry in entries %}
                     {% assign degree = entry.studyType | default: entry.degree %}
+                    {% capture degree_label %}{{ degree }}{% if entry.area %} in {{ entry.area }}{% endif %}{% endcapture %}
                     {% assign start_date = entry.start_date | default: entry.startDate %}
                     {% assign end_date = entry.end_date | default: entry.endDate | default: 'Present' %}
                     <li>
@@ -103,16 +155,18 @@ layout: default
                       <div>
                         <h6 class="title font-weight-bold homepage-degree">
                           {% if entry.url %}<a href="{{ entry.url | escape }}">{% endif %}
-                          {{- degree | escape -}}
-                          {% if entry.area %} in {{ entry.area | escape }}{% endif %}
+                          {% include localized-content.liquid en=degree_label %}
                           {%- if entry.url %}</a>{% endif %}
                           {%- if start_date -%}
-                            <span class="homepage-education-dates">, {{ start_date | split: '-' | first }}–{{ end_date | split: '-' | first }}</span>
+                            <span class="homepage-education-dates"
+                              >, {{ start_date | split: '-' | first }}–{% assign end_year = end_date | split: '-' | first -%}
+                              {%- include localized-content.liquid en=end_year -%}
+                            </span>
                           {%- elsif entry.end_date or entry.endDate -%}
                             <span class="homepage-education-dates">, {{ end_date | split: '-' | first }}</span>
                           {% endif %}
                         </h6>
-                        <h6 class="homepage-institution" style="font-size: 0.95rem">{{ entry.institution | escape }}</h6>
+                        <h6 class="homepage-institution" style="font-size: 0.95rem">{% include localized-content.liquid en=entry.institution %}</h6>
                       </div>
                     </li>
                   {% endfor %}
@@ -121,9 +175,64 @@ layout: default
             </div>
           {% elsif section_title == 'Experience' and entries.size > 0 %}
             <section aria-labelledby="{{ section_title | slugify }}">
-              <h2 id="{{ section_title | slugify }}">{{ section_title }}</h2>
+              <h2 id="{{ section_title | slugify }}">{% include localized-content.liquid en=section_title %}</h2>
               <div class="card p-3">
-                {% include cv/experience.liquid %}
+                <ul class="card-text font-weight-light list-group list-group-flush">
+                  {% for entry in entries %}
+                    {% assign start_date = entry.start_date | default: entry.startDate | split: '-' | first %}
+                    {% assign end_date = entry.end_date | default: entry.endDate | default: 'Present' | split: '-' | first %}
+                    {% assign company = entry.company | default: entry.name | default: entry.organization %}
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="text-center date-column">
+                          <table class="table-cv">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
+                                    {{ start_date }} - {% include localized-content.liquid en=end_date %}
+                                  </span>
+                                </td>
+                              </tr>
+                              {% if entry.location %}
+                                <tr>
+                                  <td>
+                                    <p class="location">
+                                      <i class="fa-solid fa-location-dot iconlocation" aria-hidden="true"></i>
+                                      {% include localized-content.liquid en=entry.location %}
+                                    </p>
+                                  </td>
+                                </tr>
+                              {% endif %}
+                            </tbody>
+                          </table>
+                        </div>
+                        <div>
+                          <h6 class="title font-weight-bold">
+                            {% if entry.url %}<a href="{{ entry.url | escape }}">{% endif %}
+                            {% include localized-content.liquid en=entry.position %}
+                            {% if entry.url %}</a>{% endif %}
+                          </h6>
+                          <h6 style="font-size: 0.95rem">{% include localized-content.liquid en=company %}</h6>
+                          {% if entry.summary %}
+                            <h6 style="font-size: 0.95rem; font-style: italic">
+                              {% include localized-content.liquid en=entry.summary markdown=true %}
+                            </h6>
+                          {% endif %}
+                          {% if entry.highlights.size > 0 %}
+                            <ul class="items">
+                              {% for highlight in entry.highlights %}
+                                <li>
+                                  <span class="item">{% include localized-content.liquid en=highlight markdown=true %}</span>
+                                </li>
+                              {% endfor %}
+                            </ul>
+                          {% endif %}
+                        </div>
+                      </div>
+                    </li>
+                  {% endfor %}
+                </ul>
               </div>
             </section>
           {% endif %}
@@ -135,15 +244,10 @@ layout: default
     {% if page.selected_papers %}
       <h2>
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">
-          {% if page.url contains '/ja/' %}
-            査読付き論文・プレプリント
-          {% else %}
-            selected publications
-          {% endif %}
+          {% include localized-content.liquid en='Publications' %}
         </a>
       </h2>
-      {% include selected_papers.liquid %}
-      <a href="{{ '/publications/' | relative_url }}" style="margin-left: 50px; margin-bottom: 20px; display: inline-block;">more &raquo;</a>
+      <div lang="en">{% include selected_papers.liquid %}</div>
     {% endif %}
 
     <!-- Social -->

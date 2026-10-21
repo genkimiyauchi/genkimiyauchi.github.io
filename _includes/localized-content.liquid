@@ -1,0 +1,25 @@
+{%- assign localized_ja = include.ja | default: site.data.translations.ja.text[include.en] | default: include.en -%}
+{%- if include.block -%}
+  <div class="localized-content" data-site-language="en" lang="en">{{ include.en }}</div>
+  <div class="localized-content" data-site-language="ja" lang="ja">{{ localized_ja }}</div>
+{%- elsif localized_ja != include.en -%}
+  <span class="localized-text" data-site-language="en" lang="en">
+    {%- if include.markdown -%}
+      {{- include.en | markdownify | remove: '<p>' | remove: '</p>' -}}
+    {%- else -%}
+      {{- include.en | escape -}}
+    {%- endif -%}
+  </span>
+  {%- comment -%}Keep language variants adjacent so hidden text leaves no space before punctuation.{%- endcomment -%}
+  <span class="localized-text" data-site-language="ja" lang="ja">
+    {%- if include.markdown -%}
+      {{- localized_ja | markdownify | remove: '<p>' | remove: '</p>' -}}
+    {%- else -%}
+      {{- localized_ja | escape -}}
+    {%- endif -%}
+  </span>
+{%- elsif include.markdown -%}
+  {{- include.en | markdownify | remove: '<p>' | remove: '</p>' -}}
+{%- else -%}
+  {{- include.en | escape -}}
+{%- endif -%}

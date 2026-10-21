@@ -1,0 +1,58 @@
+ja:
+  biography: |
+    スウォームロボティクス、マルチロボットシステム、ヒューマンロボットインタラクションを対象に、ロボットの集団が協調し、環境に適応し、人と共に働く仕組みを研究しています。
+
+    現在は[ブリストル大学](https://www.bristol.ac.uk/)と[Bristol Robotics Laboratory](https://www.bristolroboticslab.com/)にて、[Sabine Hauert](https://hauertlab.com/) 教授のもと、スウォームの技術を自動配達ロボットに応用する研究を行っています。以前はシェフィールド大学の研究員として、Horizon Europe / Innovate UK の [OpenSwarm](https://openswarm.eu/) プロジェクトに携わり、エネルギー消費を考慮したロボットスウォームの研究を行っていました。2024年に[シェフィールド大学](https://www.sheffield.ac.uk/)にて、[Roderich Groß](https://www.informatik.tu-darmstadt.de/rcps/rcps_menu/index.en.jsp) 教授の指導のもと、複数の人間がロボットスウォームの制御を動的に共有する手法について研究し、博士号を取得しました。
+
+    <a class="btn btn-sm btn-outline-primary calendar-toggle-btn cv-button" href="https://drive.google.com/file/d/1tVsMUuyUwZAz0J_j7z06nNfaRYFWE0Ah/view?usp=sharing">CV</a>
+
+  text:
+    about: 自己紹介
+    publications: 研究業績
+    news: ニュース
+    News: ニュース
+    latest posts: 最近の投稿
+    Publications: 研究業績
+    Interests: 研究分野
+    Education: 学歴
+    Experience: 経歴
+    Swarm Robotics: スウォームロボティクス
+    Multi-Robot Systems: マルチロボットシステム
+    Human-Robot Interaction: ヒューマンロボットインタラクション
+    Energy-Aware Systems: エネルギーを考慮したシステム
+    Formal Methods: 形式手法
+    PhD in Automatic Control and Systems Engineering: 博士（自動制御・システム工学）
+    MSci in Robotics and Intelligent Systems: 学士・修士一貫課程（ロボティクス・知能システム）
+    University of Sheffield: シェフィールド大学
+    King's College London: キングス・カレッジ・ロンドン
+    University of Bristol: ブリストル大学
+    Senior Research Associate: シニアリサーチアソシエイト
+    Research Associate: リサーチアソシエイト
+    PhD Researcher: 博士課程研究員
+    Research Assistant: リサーチアシスタント
+    Undergraduate Research Fellow: 学部研究フェロー
+    Bristol, UK: ブリストル、英国
+    Sheffield, UK: シェフィールド、英国
+    London, UK: ロンドン、英国
+    Present: 現在
+    Bristol Robotics Laboratory, School of Engineering Mathematics and Technology: Bristol Robotics Laboratory、工学数学・技術学科
+    School of Electrical and Electronic Engineering: 電気・電子工学科
+    Department of Automatic Control and Systems Engineering: 自動制御・システム工学科
+    Department of Informatics: 情報学科
+    Trustworthy Robot Swarms to Power City-Scale Logistics, funded by UK Research and Innovation.: UK Research and Innovation の助成による、都市規模の物流を支える信頼できるロボットスウォームの研究。
+    Energy-aware programming of robot swarms.: エネルギーを考慮したロボットスウォームのプログラミング。
+    "[OpenSwarm](https://openswarm.eu/), funded by the European Union's Horizon Europe Framework Programme.": "欧州連合の Horizon Europe フレームワークプログラムによる助成プロジェクト [OpenSwarm](https://openswarm.eu/)。"
+    Novel framework for multiple humans to effectively use robots in a swarm as a shared resource.: 複数の人間がスウォーム内のロボットを共有資源として効果的に利用するための新しい枠組み。
+    Funded by a Departmental PhD Scholarship.: 学科の博士課程奨学金による支援。
+    Interaction-based system for automated strawberry harvesting using multiple robots.: 複数のロボットによるイチゴの自動収穫のためのインタラクションに基づくシステム。
+    Multi-robot task allocation with varying task durations.: 作業時間が異なるタスクを対象としたマルチロボットのタスク割当。
+    "[Robot Artist](https://youtu.be/3rnpzn-2JuY): capturing and drawing human portraits on a canvas with ROS.": "[Robot Artist](https://youtu.be/3rnpzn-2JuY)：ROS を用いて人の顔を撮影し、キャンバスに肖像画を描くロボット。"
+    Funded by the King's Undergraduate Research Fellowship (KURF).: King's Undergraduate Research Fellowship（KURF）による助成。
+    No news so far...: お知らせはまだありません。
+
+  news:
+    announcement_2026-10-19: "&quot;[Encyclopedia of Robotics](https://link.springer.com/referencework/10.1007/978-3-642-41610-1)&quot;に寄稿した章&quot;[Human-Multirobot Interactions](https://link.springer.com/rwe/10.1007/978-3-642-41610-1_238-1)&quot;が出版されました！"
+    announcement_2026-07-13: "論文&quot;_Optimal Performance of Cooperative Energy-Replenishment in Robot Swarms_&quot;が [DARS](https://kuralab.github.io/dars2026/) に採択されました！"
+    announcement_2026-05-30: "論文&quot;_Moderate Human Assistance Enhances Task Performance and Social Perception in Human–Swarm Collaboration_&quot;が [RO-MAN](https://ro-man2026.org/) に採択されました！"
+    announcement_2026-04-01: "論文&quot;_Scalable Multi-Agent Maze Traversal With Local Communication_&quot;が [WAFR](https://algorithmic-robotics.org/) に採択されました！"
+    announcement_2026-01-30: "論文&quot;_Warmth and Competence in the Swarm: Designing Effective Human-Robot Teams_&quot;と&quot;_Split Over $n$ Resource Sharing Problem: Are Fewer Capable Agents Better Than Many Simpler Ones?_&quot;が [ANTS](https://ants2026.org/) に採択されました！"

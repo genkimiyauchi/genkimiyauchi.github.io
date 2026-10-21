@@ -1,14 +1,15 @@
 <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url | bust_file_cache }}">
+<script src="{{ '/assets/js/site-language.js' | relative_url | bust_file_cache }}"></script>
 
 <header>
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
       {% if page.permalink != '/' and page.permalink != '/ja/' %}
-        <a class="navbar-brand title font-weight-lighter site-name-top" href="{{ site.baseurl }}/">
+        <a class="navbar-brand title site-name-top" href="{{ site.baseurl }}/">
           {% if site.title == 'blank' %}
             {% if site.first_name %}
-              <span class="font-weight-bold">
+              <span>
                 {{- site.first_name -}}
               </span>
             {% endif %}
@@ -26,6 +27,22 @@
         <!-- Social Icons -->
         <div class="navbar-brand social">{% social_links %}</div>
       {% endif %}
+      <div
+        class="site-language-toggle mobile-language-control"
+        role="group"
+        data-language-control
+        aria-label="Language"
+        data-aria-label-en="Language"
+        data-aria-label-ja="言語"
+        hidden
+      >
+        <button class="site-language-option" type="button" data-language-toggle="en" aria-label="Switch to English" aria-pressed="true" lang="en">
+          EN
+        </button>
+        <button class="site-language-option" type="button" data-language-toggle="ja" aria-label="Switch to Japanese" aria-pressed="false" lang="en">
+          JP
+        </button>
+      </div>
       <!-- Navbar Toggle -->
       <button
         class="navbar-toggler collapsed navbar-toggler-main"
@@ -34,6 +51,8 @@
         aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        data-aria-label-en="Toggle navigation"
+        data-aria-label-ja="メニューを開閉"
       >
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar top-bar"></span>
@@ -50,7 +69,7 @@
           <!-- About -->
           <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
             <a class="nav-link" href="{{ '/' | relative_url }}">
-              {{- about_title }}
+              {% include localized-content.liquid en=about_title %}
               {% if page.permalink == '/' %}
                 <span class="sr-only">(current)</span>
               {% endif %}
@@ -78,7 +97,7 @@
                     aria-haspopup="true"
                     aria-expanded="false"
                   >
-                    {{- p.title }}
+                    {% include localized-content.liquid en=p.title %}
                     {% if page.title == p.title or has_active_child %}
                       <span class="sr-only">(current)</span>
                     {% endif %}
@@ -109,7 +128,7 @@
                     {%- assign url = p.url -%}
                   {%- endif %}
                   <a class="nav-link" href="{{ url | relative_url }}">
-                    {{- p.title }}
+                    {% include localized-content.liquid en=p.title %}
                     {% if page.url contains p.url %}
                       <span class="sr-only">(current)</span>
                     {% endif %}
@@ -118,18 +137,51 @@
               {% endif %}
             {% endif %}
           {% endfor %}
-          {% if site.search_enabled %}
-            <!-- Search -->
-            <li class="nav-item">
-              <button id="search-toggle" type="button" title="Search" aria-label="Open search">
-                <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span>
+          <li class="nav-item desktop-language-control">
+            <div
+              class="site-language-toggle"
+              role="group"
+              data-language-control
+              aria-label="Language"
+              data-aria-label-en="Language"
+              data-aria-label-ja="言語"
+              hidden
+            >
+              <button
+                class="site-language-option"
+                type="button"
+                data-language-toggle="en"
+                aria-label="Switch to English"
+                aria-pressed="true"
+                lang="en"
+              >
+                EN
               </button>
-            </li>
-          {% endif %}
+              <button
+                class="site-language-option"
+                type="button"
+                data-language-toggle="ja"
+                aria-label="Switch to Japanese"
+                aria-pressed="false"
+                lang="en"
+              >
+                JP
+              </button>
+            </div>
+          </li>
           {% if site.enable_darkmode %}
             <!-- Toogle theme mode -->
             <li class="toggle-container">
-              <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme">
+              <button
+                id="light-toggle"
+                type="button"
+                title="Change theme"
+                aria-label="Change color theme"
+                data-title-en="Change theme"
+                data-title-ja="テーマを切り替え"
+                data-aria-label-en="Change color theme"
+                data-aria-label-ja="カラーテーマを切り替え"
+              >
                 <i class="fa-half-sun-moon" id="light-toggle-system"></i>
                 <i class="fa-solid fa-moon" id="light-toggle-dark"></i>
                 <i class="fa-solid fa-sun" id="light-toggle-light"></i>
@@ -149,3 +201,6 @@
     </progress>
   {% endif %}
 </header>
+<script>
+  document.dispatchEvent(new Event('site-language-header-ready'));
+</script>

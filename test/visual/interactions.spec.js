@@ -110,8 +110,8 @@ test("navbar menu stays right-aligned on desktop pages", async ({ page }, testIn
   expect(Math.abs(alignment.menuRight - alignment.containerRight)).toBeLessThanOrEqual(24);
 });
 
-test("navbar search button opens modal and toggle buttons use pointer cursor", async ({ page }, testInfo) => {
-  test.skip(testInfo.project.name === "mobile", "navbar search/theme controls are collapsed under mobile menu");
+test("keyboard search opens modal and theme toggle uses pointer cursor", async ({ page }, testInfo) => {
+  test.skip(testInfo.project.name === "mobile", "theme control is collapsed under the mobile menu");
 
   await preparePage(page, "light");
   await page.goto("/al-folio/", { waitUntil: "networkidle" });
@@ -130,13 +130,12 @@ test("navbar search button opens modal and toggle buttons use pointer cursor", a
     };
   });
 
-  await page.click("#search-toggle");
+  await expect(page.locator("#navbar #search-toggle")).toHaveCount(0);
+  await page.keyboard.press("Control+k");
   const modalOpened = await page.evaluate(() => Boolean(document.querySelector("ninja-keys")?.__openCalled));
   expect(modalOpened).toBeTruthy();
 
-  const searchCursor = await page.locator("#search-toggle").evaluate((el) => window.getComputedStyle(el).cursor);
   const themeCursor = await page.locator("#light-toggle").evaluate((el) => window.getComputedStyle(el).cursor);
-  expect(searchCursor).toBe("pointer");
   expect(themeCursor).toBe("pointer");
 });
 

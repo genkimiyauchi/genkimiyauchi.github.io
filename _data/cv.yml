@@ -26,8 +26,6 @@ cv:
           - Swarm Robotics
           - Multi-Robot Systems
           - Human-Robot Interaction
-          - Energy-Aware Systems
-          - Formal Methods
 
     Education:
       - institution: University of Sheffield
@@ -58,7 +56,7 @@ cv:
         location: Bristol, UK
         start_date: 2026-04
         end_date: Present
-        summary: Bristol Robotics Laboratory, School of Engineering Mathematics and Technology.
+        summary: Bristol Robotics Laboratory, School of Engineering Mathematics and Technology
         highlights:
           - Trustworthy Robot Swarms to Power City-Scale Logistics, funded by UK Research and Innovation.
 
@@ -67,7 +65,7 @@ cv:
         location: Sheffield, UK
         start_date: 2023-05
         end_date: 2026-03
-        summary: School of Electrical and Electronic Engineering.
+        summary: School of Electrical and Electronic Engineering
         highlights:
           - Energy-aware programming of robot swarms.
           - "[OpenSwarm](https://openswarm.eu/), funded by the European Union's Horizon Europe Framework Programme."
@@ -77,7 +75,7 @@ cv:
         location: Sheffield, UK
         start_date: 2019-09
         end_date: 2023-11
-        summary: Department of Automatic Control and Systems Engineering.
+        summary: Department of Automatic Control and Systems Engineering
         highlights:
           - Novel framework for multiple humans to effectively use robots in a swarm as a shared resource.
           - Funded by a Departmental PhD Scholarship.
@@ -87,7 +85,7 @@ cv:
         location: London, UK
         start_date: 2017-10
         end_date: 2019-08
-        summary: Department of Informatics.
+        summary: Department of Informatics
         highlights:
           - Interaction-based system for automated strawberry harvesting using multiple robots.
           - Multi-robot task allocation with varying task durations.
@@ -97,7 +95,7 @@ cv:
         location: London, UK
         start_date: 2017-06
         end_date: 2017-09
-        summary: Department of Informatics.
+        summary: Department of Informatics
         highlights:
           - "[Robot Artist](https://youtu.be/3rnpzn-2JuY): capturing and drawing human portraits on a canvas with ROS."
           - Funded by the King's Undergraduate Research Fellowship (KURF).
