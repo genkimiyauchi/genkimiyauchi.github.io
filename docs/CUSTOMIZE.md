@@ -344,6 +344,8 @@ Your CV can be created using one of two formats. Choose the format that works be
    - [`assets/rendercv/settings.yaml`](../assets/rendercv/settings.yaml) — RenderCV settings
 3. To display only this format, delete [`assets/json/resume.json`](../assets/json/resume.json) (optional)
 
+The main page uses `cv.sections.Interests`, `cv.sections.Education`, and `cv.sections.Experience` from this file. The `cv_sections: [Interests, Education, Experience]` setting in [`_pages/about.md`](../_pages/about.md) enables these sections between news and selected publications. Interests appear to the left of a compact Education list, with Experience below; the columns stack on phones. Interest entries can use a `name` alone or `keywords` as a comma-separated string or YAML list. The compact education list shows the degree, subject, years, and institution; courses and highlights remain available to the full CV renderer. Remove `Interests` from `cv_sections` to show Education at full width, or use `cv_sections: []` to hide the homepage CV sections. Edit `_data/cv.yml` to update the main page and, when enabled, the RenderCV-format CV page. The CV plugin must remain enabled. The main page can display these sections even when `_pages/cv.md` is excluded in `_config.yml`.
+
 ### JSONResume Format
 
 [`assets/json/resume.json`](../assets/json/resume.json) uses the [JSONResume](https://jsonresume.org/) standard format, which is compatible with other tools and services.

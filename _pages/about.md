@@ -12,6 +12,7 @@ profile:
   #   <p>Genki Miyauchi (宮内 源己)</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
+cv_sections: [Interests, Education, Experience] # reads these sections from _data/cv.yml
 social: true # includes social icons at the bottom of the page
 
 announcements:

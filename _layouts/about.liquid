@@ -62,6 +62,75 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
+    <!-- CV sections -->
+    {% if page.cv_sections and site.plugins contains 'al_folio_cv' and site.al_folio.features.cv.enabled != false %}
+      <link rel="stylesheet" href="{{ '/assets/css/al-folio-cv.css' | relative_url | bust_file_cache }}">
+      <div class="cv homepage-cv">
+        {% for section_title in page.cv_sections %}
+          {% assign entries = site.data.cv.cv.sections[section_title] %}
+          {% if section_title == 'Education' and entries.size > 0 %}
+            <div class="homepage-background">
+              {% assign interests = site.data.cv.cv.sections.Interests %}
+              {% if page.cv_sections contains 'Interests' and interests.size > 0 %}
+                <section aria-labelledby="interests">
+                  <h2 id="interests">Interests</h2>
+                  <ul class="homepage-interests">
+                    {% for interest in interests %}
+                      {% if interest.keywords and interest.keywords != empty %}
+                        {% assign keywords = interest.keywords %}
+                        {% if keywords contains ',' %}
+                          {% assign keywords = keywords | split: ',' %}
+                        {% endif %}
+                        {% for keyword in keywords %}
+                          <li>{{ keyword | strip | escape }}</li>
+                        {% endfor %}
+                      {% else %}
+                        <li>{{ interest.name | escape }}</li>
+                      {% endif %}
+                    {% endfor %}
+                  </ul>
+                </section>
+              {% endif %}
+              <section aria-labelledby="education">
+                <h2 id="education">Education</h2>
+                <ul class="homepage-education">
+                  {% for entry in entries %}
+                    {% assign degree = entry.studyType | default: entry.degree %}
+                    {% assign start_date = entry.start_date | default: entry.startDate %}
+                    {% assign end_date = entry.end_date | default: entry.endDate | default: 'Present' %}
+                    <li>
+                      <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                      <div>
+                        <h6 class="title font-weight-bold homepage-degree">
+                          {% if entry.url %}<a href="{{ entry.url | escape }}">{% endif %}
+                          {{- degree | escape -}}
+                          {% if entry.area %} in {{ entry.area | escape }}{% endif %}
+                          {%- if entry.url %}</a>{% endif %}
+                          {%- if start_date -%}
+                            <span class="homepage-education-dates">, {{ start_date | split: '-' | first }}–{{ end_date | split: '-' | first }}</span>
+                          {%- elsif entry.end_date or entry.endDate -%}
+                            <span class="homepage-education-dates">, {{ end_date | split: '-' | first }}</span>
+                          {% endif %}
+                        </h6>
+                        <h6 class="homepage-institution" style="font-size: 0.95rem">{{ entry.institution | escape }}</h6>
+                      </div>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </section>
+            </div>
+          {% elsif section_title == 'Experience' and entries.size > 0 %}
+            <section aria-labelledby="{{ section_title | slugify }}">
+              <h2 id="{{ section_title | slugify }}">{{ section_title }}</h2>
+              <div class="card p-3">
+                {% include cv/experience.liquid %}
+              </div>
+            </section>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
