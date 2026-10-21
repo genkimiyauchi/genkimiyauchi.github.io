@@ -2,7 +2,7 @@
 # https://drive.google.com/file/d/1tVsMUuyUwZAz0J_j7z06nNfaRYFWE0Ah/view
 cv:
   name: Genki Miyauchi
-  label: Senior Research Associate
+  headline: Senior Research Associate
   email: g.miyauchi@sheffield.ac.uk
   location: Bristol, UK
   website: https://genkimiyauchi.github.io/
@@ -13,25 +13,20 @@ cv:
     - network: GitHub
       username: genkimiyauchi
 
-  address:
-    street: Bristol Robotics Lab, T Block, UWE Frenchay Campus, Coldharbour Lane
-    city: Bristol
-    postalCode: BS16 1QY
-    countryCode: GB
-
+  custom_connections:
+    - placeholder: Bristol Robotics Lab, T Block, UWE Frenchay Campus, Coldharbour Lane, Bristol, BS16 1QY, UK
+      fontawesome_icon: location-dot
+      url:
   sections:
     Interests:
-      - name: Research interests
-        keywords:
-          - Swarm Robotics
-          - Multi-Robot Systems
-          - Human-Robot Interaction
-
+      - name: Swarm Robotics
+      - name: Multi-Robot Systems
+      - name: Human-Robot Interaction
     Education:
       - institution: University of Sheffield
         location: Sheffield, UK
         area: Automatic Control and Systems Engineering
-        studyType: PhD
+        degree: PhD
         start_date: 2019-09
         end_date: 2024-03
         highlights:
@@ -41,7 +36,7 @@ cv:
       - institution: King's College London
         location: London, UK
         area: Robotics and Intelligent Systems
-        studyType: MSci
+        degree: MSci
         start_date: 2015-09
         end_date: 2019-08
         highlights:
@@ -55,7 +50,7 @@ cv:
         position: Senior Research Associate
         location: Bristol, UK
         start_date: 2026-04
-        end_date: Present
+        end_date: present
         summary: Bristol Robotics Laboratory, School of Engineering Mathematics and Technology
         highlights:
           - Trustworthy Robot Swarms to Power City-Scale Logistics, funded by UK Research and Innovation.
@@ -107,62 +102,62 @@ cv:
     Publications:
       - title: Scalable Plug-and-Play Robotic Fabrics Based on Kilobot Modules
         authors: [S. C. Obilikpa, M. S. Talamali, G. Miyauchi, J. Oyekan, R. Groß]
-        publisher: IEEE Robotics and Automation Letters (RA-L)
-        releaseDate: 2025
+        journal: IEEE Robotics and Automation Letters (RA-L)
+        date: 2025
         url: https://doi.org/10.1109/LRA.2025.3568313
         summary: "Journal article. 10(7), 6832–6839."
 
       - title: Coherent movement of error-prone individuals through mechanical coupling
         authors: [F. Pratissoli, A. Reina, Y. K. Lopes, C. Pinciroli, G. Miyauchi, L. Sabattini, R. Groß]
-        publisher: Nature Communications
-        releaseDate: 2023
+        journal: Nature Communications
+        date: 2023
         url: https://doi.org/10.1038/s41467-023-39660-6
         summary: "Journal article. 14, 4063."
 
       - title: Human-Multirobot Interactions
         authors: [G. Miyauchi, A. Kolling, R. Groß]
-        publisher: Encyclopedia of Robotics
-        releaseDate: 2026
+        journal: Encyclopedia of Robotics
+        date: 2026
         url: https://doi.org/10.1007/978-3-642-41610-1_238-1
         summary: "Book chapter. Pages 1–10."
 
       - title: Optimal Performance of Cooperative Energy-Replenishment in Robot Swarms
         authors: [J. Rau, M. S. Talamali, G. Miyauchi, U. Ali, M. Liu, D. Hughes, T. Watteyne, R. Groß]
-        publisher: 18th International Symposium on Distributed Autonomous Robotic Systems (DARS)
-        releaseDate: 2026
+        journal: 18th International Symposium on Distributed Autonomous Robotic Systems (DARS)
+        date: 2026
         summary: In press.
 
       - title: Moderate Human Assistance Enhances Task Performance and Social Perception in Human–Swarm Collaboration
         authors: [R. Tian, G. Miyauchi, R. Groß, Chaona Chen]
-        publisher: 35th IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)
-        releaseDate: 2026
+        journal: 35th IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)
+        date: 2026
         url: https://doi.org/10.1109/RO-MAN72286.2026.11714583
         summary: "Pages 2142–2147."
 
       - title: Scalable Multi-Agent Maze Traversal With Local Communication
         authors: [J. Rau, J. Argote-Gerald, G. McFassel, G. Miyauchi, P. Trodden, R. Groß]
-        publisher: 17th World Symposium on the Algorithmic Foundations of Robotics (WAFR)
-        releaseDate: 2026
+        journal: 17th World Symposium on the Algorithmic Foundations of Robotics (WAFR)
+        date: 2026
         summary: "In press. Acceptance rate: 41/72 (56.9%)."
 
       - title: "Split Over n Resource Sharing Problem: Are Fewer Capable Agents Better Than Many Simpler Ones?"
         authors: [K. Soma, M. S. Talamali, G. Miyauchi, G. Beltrame, H. Hamann, R. Groß]
-        publisher: 15th International Conference on Swarm Intelligence (ANTS)
-        releaseDate: 2026
+        journal: 15th International Conference on Swarm Intelligence (ANTS)
+        date: 2026
         url: https://doi.org/10.1007/978-3-032-26123-6_39
         summary: "Pages 438–446. Acceptance rate: 45/93 (48.4%)."
 
       - title: "Warmth and Competence in the Swarm: Designing Effective Human-Robot Teams"
         authors: [G. Miyauchi, R. Groß, Chaona Chen]
-        publisher: 15th International Conference on Swarm Intelligence (ANTS)
-        releaseDate: 2026
+        journal: 15th International Conference on Swarm Intelligence (ANTS)
+        date: 2026
         url: https://doi.org/10.1007/978-3-032-26123-6_21
         summary: "Pages 272–286. Acceptance rate: 45/93 (48.4%)."
 
       - title: "Design for One, Deploy for Many: Navigating Tree Mazes with Multiple Agents"
         authors: [J. Argote-Gerald, G. Miyauchi, J. Rau, P. Trodden, R. Groß]
-        publisher: IEEE International Symposium on Multi-Robot & Multi-Agent Systems (MRS)
-        releaseDate: 2025
+        journal: IEEE International Symposium on Multi-Robot & Multi-Agent Systems (MRS)
+        date: 2025
         url: https://doi.org/10.1109/MRS66243.2025.11357261
         summary: "Pages 1–7. Best Paper Award Finalist. Acceptance rate: 32/67 (47.8%). G. Miyauchi and J. Rau contributed equally."
 
@@ -181,122 +176,110 @@ cv:
           - T. Watteyne
           - R. Groß
           - D. Hughes
-        publisher: IEEE International Conference on Robotics and Automation (ICRA)
-        releaseDate: 2025
+        journal: IEEE International Conference on Robotics and Automation (ICRA)
+        date: 2025
         url: https://doi.org/10.1109/ICRA55743.2025.11127301
         summary: "Pages 570–576. Acceptance rate: 1606/4153 (38.67%)."
 
       - title: Ready, Bid, Go! On-Demand Delivery Using Fleets of Drones with Unknown, Heterogeneous Energy Storage Constraints
         authors: [M. S. Talamali, G. Miyauchi, T. Watteyne, M. S. Couceiro, R. Groß]
-        publisher: 24th International Conference on Autonomous Agents and Multiagent Systems (AAMAS)
-        releaseDate: 2025
+        journal: 24th International Conference on Autonomous Agents and Multiagent Systems (AAMAS)
+        date: 2025
         url: https://www.ifaamas.org/Proceedings/aamas2025/pdfs/p2015.pdf
         summary: "Pages 2015–2023. Best Paper Award Finalist. Acceptance rate: 250/1021 (25.4%)."
 
       - title: On the Benefits of Robot Platooning for Navigating Crowded Environments
         authors: [J. Argote-Gerald, G. Miyauchi, P. Trodden, R. Groß]
-        publisher: 17th International Symposium on Distributed Autonomous Robotic Systems (DARS)
-        releaseDate: 2024
+        journal: 17th International Symposium on Distributed Autonomous Robotic Systems (DARS)
+        date: 2024
         url: http://arxiv.org/abs/2410.14406
         summary: "Pages 259–272. Best Paper Award Finalist. Acceptance rate: 40/68 (58.8%)."
 
       - title: A Comparative Study of Energy Replenishment Strategies for Robot Swarms
         authors: [G. Miyauchi, M. S. Talamali, R. Groß]
-        publisher: 14th International Conference on Swarm Intelligence (ANTS)
-        releaseDate: 2024
+        journal: 14th International Conference on Swarm Intelligence (ANTS)
+        date: 2024
         url: https://doi.org/10.1007/978-3-031-70932-6_1
         summary: "Pages 3–15. Best Poster Award. Acceptance rate: 19/33 (57.6%)."
 
       - title: "Sharing the Control of Robot Swarms Among Multiple Human Operators: A User Study"
         authors: [G. Miyauchi, Y. K. Lopes, R. Groß]
-        publisher: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
-        releaseDate: 2023
+        journal: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+        date: 2023
         url: https://doi.org/10.1109/IROS55552.2023.10342457
         summary: "Pages 8847–8853. Acceptance rate: 1196/2760 (43.3%)."
 
       - title: Multi-Operator Control of Connectivity-Preserving Robot Swarms Using Supervisory Control Theory
         authors: [G. Miyauchi, Y. K. Lopes, R. Groß]
-        publisher: IEEE International Conference on Robotics and Automation (ICRA)
-        releaseDate: 2022
+        journal: IEEE International Conference on Robotics and Automation (ICRA)
+        date: 2022
         url: https://doi.org/10.1109/ICRA46639.2022.9812242
         summary: "Pages 6889–6895. Acceptance rate: 1428/3313 (43.1%)."
 
       - title: An Experiment on Human-Robot Interaction in a Simulated Agricultural Task
         authors: [Z. Huang, G. Miyauchi, A. Salazar Gomez, R. Bird, A. S. Kalsi, C. Jansen, Z. Liu, S. Parsons, E. Sklar]
-        publisher: Towards Autonomous Robotic Systems (TAROS)
-        releaseDate: 2020
+        journal: Towards Autonomous Robotic Systems (TAROS)
+        date: 2020
         url: https://doi.org/10.1007/978-3-030-63486-5_25
         summary: "Pages 221–233. Acceptance rate: 30/63 (47.6%)."
 
       - title: A Study Assessing the Impact of Task Duration on Performance Metrics for Multi-robot Teams
         authors: [G. Miyauchi, E. Sklar]
-        publisher: Towards Autonomous Robotic Systems (TAROS)
-        releaseDate: 2020
+        journal: Towards Autonomous Robotic Systems (TAROS)
+        date: 2020
         url: https://doi.org/10.1007/978-3-030-63486-5_17
         summary: "Pages 138–143. Best Paper Award at UK-RAS 2020. Acceptance rate: 30/63 (47.6%)."
 
       - title: Toward Robot Co-Labourers for Intelligent Farming
         authors: [Z. Huang, G. Miyauchi, A. Salazar Gomez, Richie Bird, A. S. Kalsi, C. Jansen, Z. Liu, S. Parsons, E. Sklar]
-        publisher: Companion of the 2020 ACM/IEEE International Conference on Human-Robot Interaction (HRI)
-        releaseDate: 2020
+        journal: Companion of the 2020 ACM/IEEE International Conference on Human-Robot Interaction (HRI)
+        date: 2020
         url: https://doi.org/10.1145/3371382.3378333
         summary: "Pages 263–265."
 
     Awards:
-      - title: Best Paper Award Finalist
+      - name: Best Paper Award Finalist
         date: 2025
-        awarder: IEEE International Symposium on Multi-Robot & Multi-Agent Systems (MRS), Singapore
-        summary: Top 7%.
-      - title: Best Paper Award Finalist
+        summary: IEEE International Symposium on Multi-Robot & Multi-Agent Systems (MRS), Singapore. Top 7%.
+      - name: Best Paper Award Finalist
         date: 2025
-        awarder: International Conference on Autonomous Agents and Multiagent Systems (AAMAS), USA
-        summary: Top 0.5%.
-      - title: Best Paper Award Finalist
+        summary: International Conference on Autonomous Agents and Multiagent Systems (AAMAS), USA. Top 0.5%.
+      - name: Best Paper Award Finalist
         date: 2024
-        awarder: International Symposium on Distributed Autonomous Robotic Systems (DARS), USA
-        summary: Top 10%.
-      - title: Best Poster Award
+        summary: International Symposium on Distributed Autonomous Robotic Systems (DARS), USA. Top 10%.
+      - name: Best Poster Award
         date: 2024
-        awarder: International Conference on Swarm Intelligence (ANTS), Germany
-        summary: Top 27%.
-      - title: Best Poster Award
+        summary: International Conference on Swarm Intelligence (ANTS), Germany. Top 27%.
+      - name: Best Poster Award
         date: 2021
-        awarder: ACSE Postgraduate Research Symposium, UK
-        summary: Top 17%.
-      - title: Best Paper Award
+        summary: ACSE Postgraduate Research Symposium, UK. Top 17%.
+      - name: Best Paper Award
         date: 2020
-        awarder: UK Robotics and Autonomous Systems Conference (UK-RAS), UK
-      - title: Robotics Prize (Fourth Year)
+        summary: UK Robotics and Autonomous Systems Conference (UK-RAS), UK.
+      - name: Robotics Prize (Fourth Year)
         date: 2019
-        awarder: King's College London, UK
-        summary: First in cohort.
-      - title: Peplow Prize
+        summary: King's College London, UK. First in cohort.
+      - name: Peplow Prize
         date: 2018
-        awarder: King's College London, UK
-        summary: Best robotics thesis.
-      - title: Best Video Award
+        summary: King's College London, UK. Best robotics thesis.
+      - name: "[Best Video Award](https://youtu.be/3rnpzn-2JuY)"
         date: 2017
-        awarder: King's Undergraduate Research Fellowship (KURF), UK
-        url: https://youtu.be/3rnpzn-2JuY
-      - title: King's Experience Research Award
+        summary: King's Undergraduate Research Fellowship (KURF), UK.
+      - name: King's Experience Research Award
         date: 2017
-        awarder: King's Undergraduate Research Fellowship (KURF), UK
-      - title: Robotics Prize (Second Year)
+        summary: King's Undergraduate Research Fellowship (KURF), UK.
+      - name: Robotics Prize (Second Year)
         date: 2017
-        awarder: King's College London, UK
-        summary: First in cohort.
-      - title: Walter Smith Prize
+        summary: King's College London, UK. First in cohort.
+      - name: Walter Smith Prize
         date: 2016
-        awarder: King's College London, UK
-        summary: First in cohort.
-      - title: First Prize — UK-RAS Manufacturing Robotics Challenge
+        summary: King's College London, UK. First in cohort.
+      - name: First Prize — UK-RAS Manufacturing Robotics Challenge
         date: 2021
-        awarder: UK-RAS Manufacturing Robotics Challenge, UK
-        summary: Top 17%.
-      - title: Revolut Prize
+        summary: UK-RAS Manufacturing Robotics Challenge, UK. Top 17%.
+      - name: Revolut Prize
         date: 2015
-        awarder: HackKing's, UK
-        summary: Awarded £200 at the hackathon.
+        summary: HackKing's, UK. Awarded £200 at the hackathon.
 
     Workshop and Invited Seminar Talks:
       - label: 2025 — Robot Demo
@@ -336,18 +319,29 @@ cv:
 
     Public Engagement:
       - label: 2022 — SwarmHack
-        details: Organised and staffed a three-day university robotics hackathon across the Universities of York, Sheffield, and Manchester, UK, enabling students to design and operate a swarm of robots through hands-on learning and collaboration.
+        details:
+          Organised and staffed a three-day university robotics hackathon across the Universities of York, Sheffield, and Manchester, UK, enabling students to design and
+          operate a swarm of robots through hands-on learning and collaboration.
       - label: 2017–2019 — KCL Robotics Society Robotic Courses
-        details: Organised weekly robotics courses during term-time for university students and summer courses for school pupils interested in building a remotely controlled robot, as a member of KCL Robotics Society at King's College London, UK.
+        details:
+          Organised weekly robotics courses during term-time for university students and summer courses for school pupils interested in building a remotely controlled robot,
+          as a member of KCL Robotics Society at King's College London, UK.
       - label: 2017–2019 — Robot Artist (King's Undergraduate Research Fellowship)
-        details: Developed Robot Artist at King's College London, UK, integrating a TurtleBot2 with a four-axis robotic manipulator using ROS to draw human portraits on a canvas. Processed images with OpenCV to generate trajectories for a slanted easel. Conducted live robot demonstrations at university open days for three years, generating portraits for visitors.
+        details:
+          Developed Robot Artist at King's College London, UK, integrating a TurtleBot2 with a four-axis robotic manipulator using ROS to draw human portraits on a canvas.
+          Processed images with OpenCV to generate trajectories for a slanted easel. Conducted live robot demonstrations at university open days for three years, generating portraits
+          for visitors.
         url: https://youtu.be/3rnpzn-2JuY
 
     Peer-Review Activities:
       - label: Journals
-        details: "Autonomous Robots (2022); IEEE Robotics and Automation Letters, RA-L (2024, 2025); IEEE Transactions on Robotics, T-RO (2026); International Journal of Robotics Research, IJRR (2024); Swarm Intelligence (2021, 2022, 2023, 2026)."
+        details:
+          "Autonomous Robots (2022); IEEE Robotics and Automation Letters, RA-L (2024, 2025); IEEE Transactions on Robotics, T-RO (2026); International Journal of Robotics Research,
+          IJRR (2024); Swarm Intelligence (2021, 2022, 2023, 2026)."
       - label: Conferences
-        details: "IJCAI (2022, 2023, 2024); AAMAS (2022, 2023, 2024, 2025); DARS (2022, 2024); IROS (2024, 2025, 2026); MRS (2021, 2025); NeurIPS (2022); ICRA (2022; Associate Editor in 2026 and 2027); ANTS (2022; Program Committee in 2024 and 2026); RSS (2020, 2024); TAROS (2023); Congresso Brasileiro de Automática, CBA (2026)."
+        details:
+          "IJCAI (2022, 2023, 2024); AAMAS (2022, 2023, 2024, 2025); DARS (2022, 2024); IROS (2024, 2025, 2026); MRS (2021, 2025); NeurIPS (2022); ICRA (2022; Associate Editor in
+          2026 and 2027); ANTS (2022; Program Committee in 2024 and 2026); RSS (2020, 2024); TAROS (2023); Congresso Brasileiro de Automática, CBA (2026)."
       - label: Grant Agency
         details: UKRI Engineering and Physical Sciences Research Council (EPSRC), UK.
 
@@ -383,42 +377,9 @@ cv:
 
     Skills:
       - name: Programming and computing
-        keywords:
-          - C++
-          - C
-          - Python
-          - Lua
-          - R
-          - MATLAB
-          - Java
-          - HTML/CSS
-          - JavaScript
-          - Unix
-          - Linux
-          - Bash
-          - Docker
-          - Singularity
-          - HPC
-          - Git
-          - OpenCV
-          - NumPy
-          - pandas
-          - Eigen
+        summary: C++, C, Python, Lua, R, MATLAB, Java, HTML/CSS, JavaScript, Unix, Linux, Bash, Docker, Singularity, HPC, Git, OpenCV, NumPy, pandas, Eigen
       - name: Robotic platforms
-        keywords:
-          - ROS1/2
-          - Gazebo
-          - RViz
-          - TurtleBot2/3/4
-          - Clearpath Jackal
-          - e-puck
-          - Pi-puck
-          - Kilobot
-          - ARGoS
-          - Dobot Magician
-          - Raspberry Pi
-          - Arduino
-
+        summary: ROS1/2, Gazebo, RViz, TurtleBot2/3/4, Clearpath Jackal, e-puck, Pi-puck, Kilobot, ARGoS, Dobot Magician, Raspberry Pi, Arduino
     Languages:
       - name: English
         summary: Professional proficiency

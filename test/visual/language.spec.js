@@ -191,6 +191,38 @@ test("language control fits the top bar on narrow screens in both themes", async
   }
 });
 
+test("experience date badges stay colored and have room on mobile", async ({ page }) => {
+  await openHomepage(page);
+  for (const width of [390, 320]) {
+    await page.setViewportSize({ width, height: 844 });
+    for (const theme of ["light", "dark"]) {
+      await page.evaluate((value) => (document.documentElement.dataset.theme = value), theme);
+      for (const language of ["English", "Japanese"]) {
+        await page.getByRole("button", { name: `Switch to ${language}`, exact: true }).click();
+        const entries = await page.locator(".homepage-cv .list-group-item").evaluateAll((items) =>
+          items.map((item) => {
+            const badge = item.querySelector(".badge");
+            const card = item.closest(".card");
+            const badgeStyle = getComputedStyle(badge);
+            return {
+              background: badgeStyle.backgroundColor,
+              themeColor: getComputedStyle(item.querySelector(".iconlocation")).color,
+              color: badgeStyle.color,
+              inset: badge.getBoundingClientRect().left - card.getBoundingClientRect().left,
+            };
+          })
+        );
+        expect(entries).toHaveLength(5);
+        for (const entry of entries) {
+          expect(entry.background).toBe(entry.themeColor);
+          expect(entry.color).not.toBe(entry.background);
+          expect(entry.inset).toBeGreaterThanOrEqual(28);
+        }
+      }
+    }
+  }
+});
+
 test("English remains readable without JavaScript", async ({ browser, baseURL }) => {
   const context = await browser.newContext({ javaScriptEnabled: false, baseURL });
   try {

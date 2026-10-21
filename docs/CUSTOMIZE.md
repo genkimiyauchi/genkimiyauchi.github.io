@@ -350,6 +350,8 @@ The top-bar EN/JP control selects English or Japanese in place, highlights the a
 
 The homepage News section initially shows the number of recent items set by `announcements.limit` in `_pages/about.md` (currently five). Its **more »** button opens all entries from `_news/` in a scrollable area, and **« close** returns to the recent items. The controls stay in English in both language modes. Older items without Japanese translations display their English source. Without JavaScript, the **more »** link opens the full news archive page.
 
+Keep `_data/cv.yml` compatible with the RenderCV version pinned in `requirements.txt`: use `headline` for the professional title, `degree` for education, lowercase `present` for ongoing roles, and `journal` and `date` for publication venues and years. Awards use `name` entries with the awarding institution in `summary`; interests use individual `name` entries, and skills use `name` and `summary`. Postal address text belongs in `custom_connections`, with `url: null` when there is no link. The homepage reads the same education and experience records, while `_bibliography/papers.bib` continues to supply the publication cards. The RenderCV workflow generates the PDF separately from the website deployment.
+
 ### JSONResume Format
 
 [`assets/json/resume.json`](../assets/json/resume.json) uses the [JSONResume](https://jsonresume.org/) standard format, which is compatible with other tools and services.
