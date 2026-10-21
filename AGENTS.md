@@ -9,6 +9,7 @@
 - Use `.agents/skills/al-folio-bootstrap/SKILL.md` for new-site setup tasks.
 - Use `.agents/skills/al-folio-v1-migration/SKILL.md` for customized fork migrations.
 - `.codex/skills` and `.claude/skills` are symlinks to `.agents/skills` for agent-specific discovery.
+- For tasks matching a repository skill, read its `SKILL.md` and apply its workflow. Keep each skill's YAML `name` and `description` frontmatter intact so Codex can discover it.
 
 ## What This Repo Owns
 

@@ -1,0 +1,1 @@
+document.querySelectorAll("[data-news]").forEach(e=>{const t=e.querySelector(".homepage-news-toggle"),o=e.querySelector(".homepage-news-items");t&&o&&(t.hidden=!1,t.addEventListener("click",()=>{const r="true"!==t.getAttribute("aria-expanded");t.setAttribute("aria-expanded",String(r)),t.textContent=r?"\xab close":"more \xbb",e.classList.toggle("is-expanded",r),o.scrollTop=0}))});
