@@ -199,6 +199,18 @@ footer.sticky-bottom a:hover {
   transform: none;
 }
 
+.homepage-cv .date-column .badge {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  border-radius: 0.25rem;
+  background-color: var(--global-theme-color);
+  color: var(--global-bg-color);
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
 .homepage-cv .table-cv td {
   border: 0;
 }
@@ -221,6 +233,11 @@ footer.sticky-bottom a:hover {
   .homepage-cv .row {
     grid-template-columns: minmax(0, 1fr);
     gap: 0.5rem;
+  }
+
+  .homepage-cv .list-group-item {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
   }
 }
 
